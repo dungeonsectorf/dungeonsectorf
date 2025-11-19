@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style-archive.css">
 </head>
 <body>
-    
+        <div class="navbar">
+            <tr>
+                <td>
+                    <h2 class="linktxt"><a href="index.html" target=>home/</a></h2>
+                </td>
+                <td>
+                    <h2 class="linktxt"><a href="characters.html" target=>characters/</a></h2>
+                </td>
+                <td>
+                    <h2 class="linktxt"><a href="art-archive.html" target=>art-archive</a></h2>
+                </td>
+            </tr>
+        </div>
+    <div class="box">
+            <button><a href="https://drive.google.com/drive/u/2/folders/16gl8BLxzfxh-3ylZQit5fbqEAy0A8mEh">Upload files</a></button>
+        <iframe id="iframe_colored" name="iframe" src="archive-subd/colored.html" frameborder="0" width="100%" height="100%"></iframe>
+<iframe id="iframe_doodles" name="iframe2" src="archive-subd/doodle.html" frameborder="0" width="100%" height="100%" style="display: none;"></iframe>
+
+<div class="links"> 
+    <a href="archive-subd/colored.html" target="iframe" onclick="showIframe('iframe_colored', 'iframe_doodles'); return true;">colored art</a>/
+    <a href="archive-subd/doodle.html" target="iframe2" onclick="showIframe('iframe_doodles', 'iframe_colored'); return true;">doodles</a>
+</div>
+
+
+            
+    </div>
+
+<script>
+    function showIframe(iframeToShowId, iframeToHideId) {
+        // 1. Get the iframe elements using their IDs
+        const iframeToShow = document.getElementById(iframeToShowId);
+        const iframeToHide = document.getElementById(iframeToHideId);
+
+        // 2. Hide the other iframe
+        if (iframeToHide) {
+            iframeToHide.style.display = 'none';
+        }
+
+        // 3. Show the requested iframe
+        if (iframeToShow) {
+            iframeToShow.style.display = 'block';
+        }
+        
+    }
+</script>
+</body>
+</html>
 </body>
 </html>
