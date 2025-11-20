@@ -2,32 +2,18 @@ body {
     margin: 0px;
     padding: 0px;
     background-image: url(assets/chibi.png);
-    background-repeat: no-repeat;
+
     background-size: contain;
     background-attachment: scroll;
     background-repeat: initial;
-}
 
-table {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
-.characterbox {
-    margin: 1%;
-}
-
 .navbar {
     color: #1238C9;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-a img:hover{
-
-    transform: scale(1.1) ;
+    flex-basis: 100%;
 }
 
 a:link {
@@ -41,3 +27,44 @@ a:visited {
 a:hover{
     color: #1238C9;
 }
+
+@media screen and (max-width: 768px) {
+
+    table td {
+        width: 50%;  
+    }
+
+    table img {
+        width: 100%;
+        max-width: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    table td {
+        width: 100%;
+    }
+
+    table img {
+        max-width: 150x;
+    }
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+

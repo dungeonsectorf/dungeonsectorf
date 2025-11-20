@@ -9,10 +9,10 @@ body {
 }
 
 .box {
-    height: 72%;
-    width: 60%;
-    top: 10%;
-    left: 20%;
+    height: 80%;
+    width: 80%;
+    top: 15%;
+    left: 10%;
     align-items: center;
     background-color: black;
     position: absolute;
@@ -63,7 +63,7 @@ button a:hover{
 }
 
 iframe {
-    height: 472px;
+    height: 85%;
     margin-top: 10px;
 }
 
@@ -72,4 +72,8 @@ iframe {
 }
 #iframe_colored{
     display: none;
+}
+
+p{
+    font-size: 17px;
 }
