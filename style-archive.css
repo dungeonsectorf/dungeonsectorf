@@ -9,9 +9,9 @@ body {
 }
 
 .box {
-    height: 80%;
+    height: 85%;
     width: 80%;
-    top: 15%;
+    top: 10%;
     left: 10%;
     align-items: center;
     background-color: black;
@@ -34,16 +34,13 @@ body {
 }
 
 button {
-    background-color: rgb(201, 40, 40);
-    color: aliceblue;
-    border: none;
     margin-top: 1%;
     margin-left: 1%;
+    gap: 1%;
 }
 
 button:hover {
     transform: scale(1.1);
-    background-color:  rgb(207, 95, 95);
 }
 a:link {
     color: aliceblue;
@@ -58,13 +55,11 @@ a:hover{
     color: #1238C9;
 }
 
-button a:hover{
-    color: aliceblue;
-}
 
 iframe {
-    height: 85%;
+    height: 82%;
     margin-top: 10px;
+    margin-bottom: 3px;
 }
 
 #iframe_doodle{
@@ -74,6 +69,11 @@ iframe {
     display: none;
 }
 
-p{
+center p{
+    color: aliceblue;
+}
+
+.links p{
     font-size: 17px;
 }
+
